@@ -96,9 +96,11 @@ The sample bots use only the Python standard library; no third-party package is 
 
 **Performance (primary).** Each game awards 1 for a win, 0.5 for a draw, and 0 for a loss; a double forfeit gives 0 to both. Every entrant plays every other entrant for the same number of paired games (both O and X). Your **performance** is your average points per game.
 
-**Ranking is banded.** Because the coin adds luck, two bots whose performances differ by less than the tournament's statistical noise band are treated as **tied on performance**. The band shrinks as more games are played. Within a tied band, the code/PDF quality score decides the order. A bot in a strictly better band always outranks one in a worse band, so a nicer write-up can never overtake a clearly stronger bot. Genuinely equal bots still tie — that is expected, and is exactly what the quality score is for.
+**Ranking is banded.** Because the coin adds luck, two bots whose performances differ by less than the tournament's statistical noise band are treated as **tied on performance**. The band shrinks as more games are played. A bot in a strictly better band always outranks one in a worse band, so nothing below can overtake a clearly stronger bot.
 
-**Quality (0–20), used to order bots within a performance band.** Same rubric for everyone:
+**Secondary benchmark (private experts).** Every submission also plays a private set of internal reference bots that span a wide range of strategies, from naive to strong. This is a **secondary performance metric**: it is used only to order bots that are already tied on the entrant round robin, before any subjective scoring. The reference bots and the raw benchmark scores are not published, so that submissions are judged on general strength rather than on how well they match one specific opponent.
+
+**Quality (0–20), used to order bots within a performance band after the expert benchmark.** Same rubric for everyone:
 
 | Criterion | Points | What we look for |
 | --- | ---: | --- |
