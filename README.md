@@ -114,7 +114,7 @@ Remaining ties (same band and quality): head-to-head points, then wins, then few
 ## Submission details
 
 - Submission form: **https://forms.gle/f8yUyEcGFtcsEeFR6**
-- Submissions are open now and close **strictly on 10 October, 11:59 PM**.
+- Submissions are open now and close **strictly on 11 October, 11:59 PM**.
 - Open to all freshers.
 - **Exciting goodies for the top 3 participants.**
 - Rules, bot API, examples and local testing are all in this README.
